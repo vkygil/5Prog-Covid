@@ -7,10 +7,21 @@ body {
 }
 
 .fa-solid {
-    font-size: x-large;
+    font-size: large;
     border-radius: 10px;
 }
-.active{
+
+.active {
     background-color: rgb(32, 0, 82);
     color: white;
+}
+
+img {
+    width: 30px;
+}
+
+.list-group-item {
+    border-top-width: 1px !important;
+    border-radius: inherit;
+    margin: 4px 0;
 }
