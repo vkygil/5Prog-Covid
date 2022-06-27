@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.fa-solid {
+    font-size: x-large;
+    border-radius: 10px;
+}
+.active{
+    background-color: rgb(32, 0, 82);
+    color: white;
+}
