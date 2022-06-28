@@ -16,7 +16,7 @@ body {
     color: white;
 }
 
-img {
+.list-group-item img {
     width: 30px;
 }
 
