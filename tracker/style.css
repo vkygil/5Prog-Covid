@@ -1,3 +1,11 @@
+:root{
+    --colorred:  #f81114;
+    --colororange:#fa7227;
+    --colorgreen:#6bb313;
+    --colorblue:#4845ad;
+    --colorbasetext:#3639a9;
+}
+
 body {
     height: 100vh;
 }
@@ -12,7 +20,7 @@ body {
 }
 
 .active {
-    background-color: rgb(32, 0, 82);
+    background-color: var(--colorbasetext);
     color: white;
 }
 
@@ -24,4 +32,84 @@ img {
     border-top-width: 1px !important;
     border-radius: inherit;
     margin: 4px 0;
+}
+
+
+.icons-nav{
+    color: rgb(32, 0, 82);
+    border-radius: 3px;
+}
+.icons-nav:hover i{
+    background: rgb(32, 0, 82);
+    color: white;
+}
+
+.container-cases{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0.6em;
+    border-radius: 0.3em;
+    margin-bottom: 0.6em;
+}
+.container-cases p{
+    margin: 0;
+    
+}
+
+.color-light-red{
+    background: #fef2f2;
+}
+.color-light-orange{
+    background: #fef9f1;
+}
+.color-light-green{
+    background: #effdec;
+}
+.color-light-blue{
+    background: #eefcff;
+    
+}
+
+.color-light-red:hover{
+    border: var(--colorred) solid 2px;
+}
+
+.color-light-orange:hover{
+    border: var(--colororange) solid 2px;
+}
+
+.color-light-green:hover{
+    border: var(--colorgreen) solid 2px;
+}
+.color-light-blue:hover{
+    border: var(--colorblue) solid 2px;
+}
+
+.color-red{
+    color: var(--colorred);
+}
+.color-orange{
+    color: var(--colororange);
+}
+.color-green{
+    color: var(--colorgreen);
+}
+.color-blue{
+    color: var(--colorblue);
+}
+.container-cases-country{
+    display: grid;
+    grid-template-columns:  auto auto;
+}
+hr{
+    margin: 0.2;
+}
+#mapa-tracker{
+    width: 30em;
+    height: 30em;
+}
+svg{
+    color:black;
 }
