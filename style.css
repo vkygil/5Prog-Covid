@@ -1,0 +1,33 @@
+15 
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+    background-color: #171133 !important;
+ 
+   
+}
+
+.title{
+    text-align: center;   
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+} 
+
+
+.white-text{
+    color:white;
+}
+
+.reflect{
+    box-shadow:  0px  10px 15px 1px whitesmoke;
+  }
+
+.justify,.cardtitle{
+    text-align: justify !important;
+}
