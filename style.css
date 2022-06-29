@@ -8,6 +8,10 @@ html{
     background-color: var(--gris-claro);
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 a{
     text-decoration: none;
 }
@@ -40,7 +44,6 @@ li{
     pointer-events: none;
     color: var(--azul);
     font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
@@ -59,7 +62,7 @@ li{
     color: #515184;
     padding: 24px;
     font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-weight: 400;
 }
 
@@ -73,7 +76,7 @@ li{
     background-color: #3639ae;
     color: white;
     font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-weight: 400;
     border-radius: 24px;
     border: none;
@@ -84,7 +87,9 @@ li{
 .infocontainer{
     display: flex;
     background: rgb(23,32,95);
-background: linear-gradient(0deg, rgba(23,32,95,1) 8%, rgba(19,76,129,1) 57%, rgba(40,138,177,1) 100%);
+    background: linear-gradient(0deg, rgba(23,32,95,1) 8%, rgba(19,76,129,1) 57%, rgba(40,138,177,1) 100%);
+    height: 668px;
+
 }
 
 .infocontainer__iconos{
@@ -92,11 +97,12 @@ background: linear-gradient(0deg, rgba(23,32,95,1) 8%, rgba(19,76,129,1) 57%, rg
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    width: 5%;
 }
 
 .infocontainer__iconsize{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -119,3 +125,49 @@ background: linear-gradient(0deg, rgba(23,32,95,1) 8%, rgba(19,76,129,1) 57%, rg
 .infocontainer__iconos img{
     height: 28px;
 }
+
+.infocontainer__texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+}
+
+.infocontainer__texto h1{
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    color: #FFFFFF;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 6.3rem;
+}
+
+.infocontainer__texto p{
+    padding: 0;
+    margin: 0;
+    color: #c0cbc8;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.infocontainer__texto button{
+    width: 210px;
+    height: 64px;
+    background-color: #121158;
+    color: #FFFFFF;
+    border: #292b8e 1px solid;
+    border-radius: 34px;
+    font-weight: 600;
+
+}
+
+.infocontainer__imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+}
+
+/* tercera seccion */
+
