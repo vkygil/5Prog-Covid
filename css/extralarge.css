@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__divs{
+    display: flex;
+  }
+
+  .nav__icon a {
+    font-size: 3rem;
+  }
+
+  .nav__links li {
+    padding: 10px;
+    font-size: 2.1rem;
+  }
+
+  .nav--button {
+    width: 140px;
+    height: 44px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .infocontainer__texto{
+    width: 66%;
+  }
+  .infocontainer__texto h1 {
+    font-size: 5.5rem;
+  }
+
+  .infocontainer__texto p {
+    font-size: 2.4rem;
+  }
+
+  .infocontainer__texto button {
+    width: 200px;
+    height: 66px;
+    font-size: 1.5rem;
+  }
+
+  .infocontainer__iconsize{
+    width: 55px;
+    height: 55px;
+  }
+
+  .infocontainer__iconos img{
+    height: 34px;
+  }
+  .nav__icon img {
+    display: block;
+  }
+
+  .infocontainer__imagen{
+    display: flex;
+  }
+
+  .infocontainer__imagen img {
+    width: 77%;
+    height: 77%;
+  }
+
+  .infocontainer__iconos{
+    width: 13%;
+  }
+
+  .flecha {
+    display: block;
+  }
+
+  .colaboradores{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .colaboradores img{
+    height: 74px;
+    width: 74px;
+  }
