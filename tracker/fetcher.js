@@ -42,8 +42,15 @@ async function getAllCountryData() {
     }
 
 }
-
-
-
+getAllCountryData() 
+async function getAllData2() {
+    let covidAll = await fetch("https://disease.sh/v3/covid-19/all")
+        .then(response => response.json())
+    document.querySelector("#ListTotalCase").innerHTML = covidAll.cases
+    document.querySelector("#ListActiveCase").innerHTML = covidAll.active
+    document.querySelector("#ListRecoveredCase").innerHTML = covidAll.recovered
+    document.querySelector("#ListDeathCase").innerHTML = covidAll.deaths
+}
+getAllData2()
 
 
