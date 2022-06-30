@@ -13,11 +13,11 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 li {
-  list-style: none;
+  list-style: none !important;
 }
 
 :root {
@@ -57,10 +57,14 @@ li {
 
 .nav__links li {
   pointer-events: none;
-  color: #515184;
+  color: #515184 !important;
   padding: 24px;
   font-size: 1.8rem;
   font-weight: 400;
+}
+.nav__links li a{
+  color: #515184 !important;
+
 }
 
 .flecha {
@@ -174,9 +178,15 @@ li {
 
 /* tercera seccion */
 
+.padre__colaboradores{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .colaboradores {
   display: flex;
-  position: relative;
+  position: absolute;
   top: -56px;
   width: 80%;
   height: 112px;
@@ -211,6 +221,7 @@ li {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 90px;
+  margin-top: 62px;
 }
 
 .faqs__title p {
@@ -276,3 +287,60 @@ li {
   height: 400px;
   border-radius: 24px;
 } */
+
+
+
+/* alejandra codigo */
+
+.contenedoor__A{
+  background-color: #171133 !important;
+  padding-top: 100px;
+}
+
+.title{
+  text-align: center;   
+}
+
+.container{
+  font-family: 'Poppins', sans-serif;
+} 
+
+
+.white-text{
+  color:white;
+}
+
+.reflect{
+  box-shadow:  0px  10px 15px 1px whitesmoke;
+}
+
+.justify,.cardtitle{
+  text-align: justify !important;
+}
+
+/* modcris */
+
+.container-modified h6{
+  font-size: 1.6rem !important;
+}
+
+.container-modified h1{
+  font-size: 4rem !important;
+}
+
+.card-title{  
+  font-size: 2rem !important;
+}
+
+.card-text{
+  font-size: 1.6rem !important;
+}
+
+.card-body h1{
+  font-size: 4rem !important;
+}
+
+.btn{
+  font-size: 1.6rem !important;
+  line-height: 2.5rem !important;
+}
