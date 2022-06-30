@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker 3, summary table with covid stats per country</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <main class="d-flex flex-nowrap sidebar ">
+        <div class="d-flex flex-column flex-shrink-0 bg-light d-none d-sm-block">
+            <a href="/" class="d-block p-4 link-dark text-decoration-none" data-bs-toggle="tooltip"
+                data-bs-placement="right">
+                <i class="fa-solid fa-virus"></i>
+            </a>
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+
+                <li>
+                    <a href="#" class="  " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2 fa-solid fa-chart-pie-simple"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2 fa-solid fa-table-list"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2 fa-regular fa-grid-2"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2 fa-regular fa-folder-grid"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2 fa-regular fa-layer-group"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2  fa-solid fa-chart-line-up"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2  fa-regular fa-message"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <br>
+                    <h2> COVID-19 Tracker </h2>
+                    <ul class="list-group covid-cases-list">
+                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                            style="background-color: hsl(0deg 100% 97%)">
+                            <span>Total Case</span> <span id="ListTotalCase">1231223</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                            style="background-color: hsl(34deg 100% 97%)">
+                            <span>Active Case</span> <span id="ListActiveCase">12313223</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                            style="background-color: hsl(117deg 100% 96%)">
+                            <span>Recovered Case</span> <span id="ListRecoveredCase">12313223</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                            style="background-color: hsl(194deg 100% 97%)">
+                            <span>Death Case</span> <span id="ListDeathCase">12313223</span>
+                        </li>
+                    </ul>
+                    <br>
+                    <h3> Top 10 country </h3>
+                    <ul class="list-group" id="top-countries">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="https://disease.sh/assets/img/flags/us.png">
+                                A list item
+                            </div>
+                            <span>1231223</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="https://disease.sh/assets/img/flags/us.png">
+                                A list item
+                            </div>
+                            <span>1231223</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="https://disease.sh/assets/img/flags/us.png">
+                                A list item
+                            </div>
+                            <span>1231223</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" col-md">
+                    <h4>Ajax Data Table - Covid-19 Country Wise State</h4>
+                    <table id="example" class="display nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Flag</th> 
+                                    <th>Country</th>
+                                    <th>Cases</th> 
+                                    <th>New Cases</th> 
+                                    <th>Deaths</th>
+                                    <th>New Deaths</Datag>
+                                    <th>Recovered</th>
+                                    <th>Active</th>    
+                                    <th>Critical</th> 
+                                    <th>Tested</th> 
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Flag</th> 
+                                    <th>Country</th>
+                                    <th>Cases</th> 
+                                    <th>New Cases</th> 
+                                    <th>Deaths</th>
+                                    <th>New Deaths</Datag>
+                                    <th>Recovered</th>
+                                    <th>Active</th>    
+                                    <th>Critical</th> 
+                                    <th>Tested</th> 
+                                </tr>
+                            </tfoot>
+                    </table>                 
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="fetcher.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+
+
+        $(document).ready(async function () {
+            let mydata = await fetch("https://disease.sh/v3/covid-19/countries?sort=cases")
+                .then(response => response.json());
+            $('#example').DataTable({
+                data: mydata,
+                columns: [
+                    {
+                        data:'countryInfo.flag',
+                        render: function (data, type) {
+                            console.log(data);
+                            return `<img class="imageTable" src="${data}">`
+                        }
+                    },
+
+                    {
+                        data: 'country',
+                    },
+                    {
+                        data:"cases"
+                    },
+                    {
+                        data: "todayCases"
+                    },
+                    {
+                        data:"deaths"
+                    },
+                    {
+                        data:"todayDeaths"
+                    },
+                    {
+                        data:"recovered"
+                    },
+                    {
+                        data:"active"
+                    },
+                    {
+                        data:"critical"
+                    },
+                    {
+                        data:"tests"
+                    },
+                ]
+            });
+        });
+    </script>
+    <script>
+
+        function selectCountry(name) {
+            let country = topcountries.find(el => el.country == name)
+            if (country == undefined) {
+                alert("no existen datos para " + name)
+                return
+            }
+
+            document.querySelector("#selectorCountry").value = name
+            let allH5 = document.querySelector("#countryInfoCards").getElementsByTagName("h5")
+
+
+            for (const h5 of allH5) {
+                console.log(h5.innerHTML);
+                switch (h5.innerHTML) {
+                    case "Total cases":
+                        h5.nextElementSibling.innerHTML = country.cases
+                        break;
+                    case "Total Recovered":
+                        h5.nextElementSibling.innerHTML = country.recovered
+                        break;
+                    case "New Cases":
+                        h5.nextElementSibling.innerHTML = country.todayCases
+                        break;
+                    case "Total Deaths":
+                        h5.nextElementSibling.innerHTML = country.deaths
+                        break;
+                    case "Total Active":
+                        h5.nextElementSibling.innerHTML = country.active
+                        break;
+                    case "New Deaths":
+                        h5.nextElementSibling.innerHTML = country.todayDeaths
+                        break;
+
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

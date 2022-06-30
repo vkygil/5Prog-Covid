@@ -1,0 +1,63 @@
+body {
+    height: 100vh;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.fa-solid {
+    font-size: large;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: rgb(32, 0, 82);
+    color: white;
+}
+
+.list-group-item img {
+    width: 30px;
+    border-radius: 3px;
+}
+
+.list-group-item {
+    border-top-width: 1px !important;
+    border-radius: inherit;
+    margin: 4px 0;
+}
+
+.covid-cases-list>li {
+    border: 0;
+    padding: 20px 20px;
+    font-weight: bold;
+}
+
+.covid-cases-list span:nth-child(2n+1) {
+    color: hsl(245deg 39% 31%);
+}
+.covid-cases-list span:nth-child(2n) {
+    font-size: x-large;
+}
+#ListTotalCase {
+    color: hsl(357deg 100% 53%);;
+}
+#ListActiveCase {
+    color: rgb(255, 139, 15);;
+}
+#ListRecoveredCase {
+    color: rgb(43, 209, 24);;
+}
+#ListDeathCase {
+    color: rgb(5, 54, 179);;
+}
+
+
+.card {
+    margin: 10px 0;
+}
+
+.imageTable{
+
+    width: 50px;
+}
