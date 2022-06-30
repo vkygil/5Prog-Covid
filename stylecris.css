@@ -191,3 +191,39 @@ li{
     width: 100px;
 }
 
+/* Seccion Faqs */
+
+.faqs{
+    background-color: #171133;
+    width: 100%;
+}
+
+.faqs__title{
+    display: flex;
+    width: 100%;
+    height: 258px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faqs__title p{
+    font-size: 3.6rem;
+    color: #FFFFFF;
+}
+
+.faqs__title h1{
+    padding: 0;
+    margin: 0;
+    font-size: 8rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.faqs__container{
+    width: 76%;
+    height: 350px;
+    background-color: #1b2a4e;
+    display: flex;
+}
