@@ -36,28 +36,82 @@ body {
 .covid-cases-list span:nth-child(2n+1) {
     color: hsl(245deg 39% 31%);
 }
+
 .covid-cases-list span:nth-child(2n) {
     font-size: x-large;
 }
+
 #ListTotalCase {
-    color: hsl(357deg 100% 53%);;
+    color: hsl(357deg 100% 53%);
+    ;
 }
+
 #ListActiveCase {
-    color: rgb(255, 139, 15);;
+    color: rgb(255, 139, 15);
+    ;
 }
+
 #ListRecoveredCase {
-    color: rgb(43, 209, 24);;
+    color: rgb(43, 209, 24);
+    ;
 }
+
 #ListDeathCase {
-    color: rgb(5, 54, 179);;
+    color: rgb(5, 54, 179);
+    ;
 }
 
 
 .card {
+    padding-top: 5px;
     margin: 10px 0;
 }
- 
 
-.imageTable{ 
+
+.imageTable {
     width: 40px !important;
+}
+
+.table {
+    color: hsl(245deg 39% 31%)
+}
+
+.container-cards {
+    padding-left: 0.3em;
+}
+
+.container-cards:hover {
+    transform: scale(1.1);
+}
+
+.img-covid img {
+    width: 0.7em;
+
+}
+
+.cards-down {}
+
+.images-down {
+    padding: 0.5em;
+    width: 40px;
+    height: 40px;
+}
+
+
+.container-cards .col-md-4 img {
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px !important;
+
+}
+
+.container-cards .col-md-8 h5 {
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.container-cards .card-body p {
+    padding-top: 0;
+    font-size: 0.7em;
 }
