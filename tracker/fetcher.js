@@ -21,38 +21,28 @@ async function getAllCountryData() {
     document.querySelector("#top-countries").innerHTML = html
 
     //selector añadir todos los countries
-    html = ''
-    for (let i = 0; i < topcountries.length; i++) {
-        const country = topcountries[i];
-        html += `
+    let selectorCountry = document.querySelector("#selectorCountry")
+    if (selectorCountry) {
+        html = ''
+        for (let i = 0; i < topcountries.length; i++) {
+            const country = topcountries[i];
+            html += `
             <option>${country.country}</option> 
             `
+        }
+        selectorCountry.innerHTML = html
+
+        // Mostrar datos del ocuntry al seleccionar el country
+        selectorCountry.addEventListener("change", function () {
+            selectCountry(this.value);
+        })
+
+        //mostrar datos de USA al cargar la pagina
+        selectCountry("USA")
     }
-    let selectorCountry = document.querySelector("#selectorCountry")
-    selectorCountry.innerHTML = html
 
-    // Mostrar datos del ocuntry al seleccionar el country
-    selectorCountry.addEventListener("change", function () {
-        selectCountry(this.value);
-    })
+}
 
-    //mostrar datos de USA al cargar la pagina
-    selectCountry("USA")
-}
-getAllCountryData()
-async function getAllData() {
-    let covidAll = await fetch("https://disease.sh/v3/covid-19/all")
-        .then(response => response.json())
-    document.querySelector("#ListTotalCase").innerHTML = covidAll.cases
-    document.querySelector("#ListTotalConfirmed").innerHTML = covidAll.cases
-    document.querySelector("#ListActiveCase").innerHTML = covidAll.active
-    document.querySelector("#ListRecoveredCase").innerHTML = covidAll.recovered
-    document.querySelector("#ListRecoveredCase2").innerHTML = covidAll.recovered
-    document.querySelector("#ListDeathCase").innerHTML = covidAll.deaths
-    document.querySelector("#ListDeathCase2").innerHTML = covidAll.deaths
-    document.querySelector("#ListNewDeathCase").innerHTML = covidAll.todayDeaths
-}
-getAllData()
 
 
 
