@@ -24,8 +24,6 @@ A partir de los siguientes mockups, se trabaja con el API y así obtener los dat
 <br>
 Figura 1.- Mockup del tracker 2
 <br>
-
-
 <br>
 <br>
 ![alt text](https://github.com/AndresEstebanPatino/recursos-app-covid/blob/4368c5ccaf066455ad0796b668e2414d6d32e079/mockups/Tracker-3.png)
@@ -33,8 +31,6 @@ Figura 1.- Mockup del tracker 2
 <br>
 Figura 1.- Mockup del tracker 3
 <br>
-
-
 <br>
 <br>
 ![alt text](https://github.com/AndresEstebanPatino/recursos-app-covid/blob/4368c5ccaf066455ad0796b668e2414d6d32e079/mockups/Tracker-4.png)
@@ -42,7 +38,6 @@ Figura 1.- Mockup del tracker 3
 <br>
 Figura 1.- Mockup del tracker 4
 <br>
-
 <br>
 <br>
 ![alt text](https://github.com/AndresEstebanPatino/recursos-app-covid/blob/4368c5ccaf066455ad0796b668e2414d6d32e079/mockups/Tracker-5.png)
