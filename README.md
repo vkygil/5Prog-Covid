@@ -20,7 +20,7 @@ Figura 1.- Mockup del home 2
 A partir de los siguientes mockups, se trabaja con el API y así obtener los datos.
 <br>
 <br>
-![alt text](https://github.com/AndresEstebanPatino/recursos-app-covid/blob/4368c5ccaf066455ad0796b668e2414d6d32e079/mockups/Tracker-2.png)
+![alt texto](https://github.com/AndresEstebanPatino/recursos-app-covid/blob/4368c5ccaf066455ad0796b668e2414d6d32e079/mockups/Tracker-2.png)
 <br>
 <br>
 Figura 1.- Mockup del tracker 2
