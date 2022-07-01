@@ -56,3 +56,46 @@ getAllData2()
 function getCountryInfo(c){
     return topcountries.find(el=>el.country == c)
 }
+
+let wiseCountries
+async function getAllCountryData2() {
+
+    wiseCountries = await fetch("https://disease.sh/v3/covid-19/countries?sort=cases")
+        .then(response => response.json())
+
+    //mostras todos los countries 
+    let html2 = ''
+    for (let i = 0; i < 9; i++) {
+        const country = wiseCountries[i];
+        html2 = html2 + `
+            
+        <div class="row g-5 tarjetaPais" data-country="${country.country}">
+                <div class="col-md-4">
+                    <img src="${country.countryInfo.flag}" class="img-fluid rounded-start" alt="...">
+                </div>
+            <div class="col-md-1">
+                    <div class="card-body">
+                        <h5>${country.country}</h5>
+                    </div>
+            </div>
+        </div>
+            `
+    }
+
+    document.querySelector("#wise-countries").innerHTML = html2
+
+    selectCountry("USA")
+
+    var element = document.getElementsByClassName('tarjetaPais');
+    for (let j = 0; j < 9; j++) {
+
+        element[j].addEventListener("click", function (e) {
+            
+            console.log(element[j].dataset.country);
+            selectCountry(element[j].dataset.country);
+        }, false);
+    }
+
+} 
+
+getAllCountryData2()

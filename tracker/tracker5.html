@@ -14,7 +14,6 @@
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet"
         type="text/css" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -117,110 +116,98 @@
                 <div class="col-md">
                     <br>
                     <h1>
-                        Cases for each country
+                        COVID-19 Country Wise - Tabs
                     </h1>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <select class="form-control" id="selectorCountry">
-                                <option>USA</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row" id="countryInfoCards">
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Total cases</h5>
-                                    <h2 class="card-text">124132</h2>
+                    
+                    <div class="row" >
+                        <div class="card-group" >
+                            <div class="row row-cols-1 row-cols-md-3 g-4 card-group"  id="wise-countries">
+                                <div class="row g-5">
+                                    <div class="col-md-4">
+                                      <img src="https://disease.sh/assets/img/flags/us.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-1">
+                                            <div class="card-body">
+                                                <h5>Any</h5>
+                                            </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Total Recovered</h5>
-                                    <h2 class="card-text">124132</h2>
+                                <div class="row g-5">
+                                    <div class="col-md-4">
+                                      <img src="https://disease.sh/assets/img/flags/us.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-1">
+                                            <div class="card-body">
+                                                <h5>Any</h5>
+                                            </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">New Cases</h5>
-                                    <h2 class="card-text">124132</h2>
+                                <div class="row g-5">
+                                    <div class="col-md-4">
+                                      <img src="https://disease.sh/assets/img/flags/us.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-1">
+                                            <div class="card-body">
+                                                <h5>Any</h5>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
-                            <div class="card">
+                    </div>
+                   
+                    <div class="card-group" >
+                        <div class="row row-cols-1 row-cols-md-3 g-4"  style="">
+                            <div class="row g-5">
+                                <div class="col-md-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Cases</h5>
+                                    <h2 class="card-text" id="totalCases">124132</h2>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row g-5">
+                                <div class="col-md-4">
                                 <div class="card-body">
                                     <h5 class="card-title">Total Deaths</h5>
-                                    <h2 class="card-text">124132</h2>
+                                    <h2 class="card-text "id="totalDeaths">124132</h2>
                                 </div>
                             </div>
-                            <div class="card">
+                            </div>
+                            <div class="row g-5">
+                                <div class="col-md-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Recovered</h5>
+                                    <h2 class="card-text" id="totalRecover">124132</h2>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row g-5">
+                                <div class="col-md-4">
                                 <div class="card-body">
                                     <h5 class="card-title">Total Active</h5>
-                                    <h2 class="card-text">124132</h2>
+                                    <h2 class="card-text" id="totalActive">124132</h2>
                                 </div>
                             </div>
-                            <div class="card">
+                            </div>
+                            <div class="row g-5">
+                                <div class="col-md-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Cases</h5>
+                                    <h2 class="card-text" id="newCases">124132</h2>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row g-5">
+                                <div class="col-md-4">
                                 <div class="card-body">
                                     <h5 class="card-title">New Deaths</h5>
-                                    <h2 class="card-text">124132</h2>
+                                    <h2 class="card-text" id="newDeaths">124132</h2>
+                                </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6  d-flex justify-content-center  " id="mapContainer">
-                            <!-- <img src="https://aceproject.org/acefinal-images/cd-worldmap.png" width="100%" alt=""> -->
-
-
-                            <!-- Create an element where the map will take place -->
-                            <svg id="my_dataviz" width="400" height="300"></svg>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="card-group">
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-text">Total Confirmed</h5>
-                                    <p class="card-title" id="ListTotalConfirmed">123123423</p>
-                                </div>
-                            </div>
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-text">Total Recovered</h5>
-                                    <p class="card-title" id="ListRecoveredCase2">123123423</p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-text">Total Deaths</h5>
-                                    <p class="card-title" id="ListDeathCase2">123123423</p>
-                                </div>
-                            </div>
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-text">New Deaths</h5>
-                                    <p class="card-title" id="ListNewDeathCase">123123423</p>
-                                </div>
-                            </div>
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-text">Help Line No.</h5>
-                                    <p class="card-title">198</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -231,69 +218,27 @@
     <!-- <script src="jaysons.js"></script> -->
     <script src="fetcher.js"></script>
     <script>
+        // render
 
-        getAllCountryData()
-        async function getAllData() {
-            let covidAll = await fetch("https://disease.sh/v3/covid-19/all")
-                .then(response => response.json())
-            document.querySelector("#ListTotalCase").innerHTML = covidAll.cases
-            document.querySelector("#ListTotalConfirmed").innerHTML = covidAll.cases
-            document.querySelector("#ListActiveCase").innerHTML = covidAll.active
-            document.querySelector("#ListRecoveredCase").innerHTML = covidAll.recovered
-            document.querySelector("#ListRecoveredCase2").innerHTML = covidAll.recovered
-            document.querySelector("#ListDeathCase").innerHTML = covidAll.deaths
-            document.querySelector("#ListDeathCase2").innerHTML = covidAll.deaths
-            document.querySelector("#ListNewDeathCase").innerHTML = covidAll.todayDeaths
-        }
-        getAllData()
+
 
     </script>
     <script>
 
         function selectCountry(name) {
-            let country = topcountries.find(el => el.country == name)
+            let country = wiseCountries.find(el => el.country == name)
             if (country == undefined) {
                 alert("no existen datos para " + name)
                 return
             }
 
-            document.querySelector("#selectorCountry").value = name
-            let allH5 = document.querySelector("#countryInfoCards").getElementsByTagName("h5")
-            // let totalCases = document.querySelector("#countryInfoCards").getElementsByTagName("h5").find(el => el.innerHtml == 'Total cases')
-
-            // document.getElementById("1244").innerHTML = country.cases
-            // document.getElementById("1244").innerHTML = country.cases
-            // document.getElementById("1244").innerHTML = country.cases
-            // document.getElementById("1244").innerHTML = country.cases
-            // document.getElementById("1244").innerHTML = country.cases
-            // document.getElementById("1244").innerHTML = country.cases
-
-
-            for (const h5 of allH5) {
-                console.log(h5.innerHTML);
-                switch (h5.innerHTML) {
-                    case "Total cases":
-                        h5.nextElementSibling.innerHTML = country.cases
-                        break;
-                    case "Total Recovered":
-                        h5.nextElementSibling.innerHTML = country.recovered
-                        break;
-                    case "New Cases":
-                        h5.nextElementSibling.innerHTML = country.todayCases
-                        break;
-                    case "Total Deaths":
-                        h5.nextElementSibling.innerHTML = country.deaths
-                        break;
-                    case "Total Active":
-                        h5.nextElementSibling.innerHTML = country.active
-                        break;
-                    case "New Deaths":
-                        h5.nextElementSibling.innerHTML = country.todayDeaths
-                        break;
-
-
-                }
-            }
+            document.querySelector("#totalCases").innerHTML = country.cases
+            document.querySelector("#newDeaths").innerHTML = country.todayDeaths
+            document.querySelector("#newCases").innerHTML = country.todayCases
+            document.querySelector("#totalRecover").innerHTML = country.recovered
+            document.querySelector("#totalDeaths").innerHTML = country.deaths
+            document.querySelector("#totalActive").innerHTML = country.active
+             
         }
 
         // The svg

@@ -42,8 +42,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
-                        <i style="color: gray;" class="p-3 m2 fa-regular fa-folder-grid"></i>
+                    <a href="/tracker/tracker5.html" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i  class="p-3 m2 fa-regular fa-folder-grid"></i>
                     </a>
                 </li>
                 <li>
@@ -57,8 +57,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
-                        <i style="color: gray;" class="p-3 m2  fa-regular fa-message"></i>
+                    <a href="/tracker/tracker7.html" class=" " data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="p-3 m2  fa-solid fa-globe"></i>
                     </a>
                 </li>
             </ul>
@@ -255,10 +255,10 @@
             if (country == undefined) {
                 alert("no existen datos para " + name)
                 return
-            } 
+            }
             document.querySelector("#selectorCountry").value = name
             let allH5 = document.querySelector("#countryInfoCards").getElementsByTagName("h5")
-            
+
             for (const h5 of allH5) {
                 console.log(h5.innerHTML);
                 switch (h5.innerHTML) {
@@ -279,10 +279,10 @@
                         break;
                     case "New Deaths":
                         h5.nextElementSibling.innerHTML = country.todayDeaths
-                        break; 
+                        break;
                 }
             }
-        } 
+        }
         // The svg
         const svg = d3.select("svg"),
             width = +svg.attr("width"),
@@ -340,13 +340,13 @@
                         .duration(200)
                         .style("opacity", 1)
                         .style("filter", "none")
-                        
+
                     d3.select(this)
                         .transition()
                         .duration(200)
                         .style("opacity", 1)
                         .style("filter", "hue-rotate(240deg)")
-                        // filter: hue-rotate(240deg);
+                    // filter: hue-rotate(240deg);
                 }
                 svg.on("click", function (d) {
                     // console.log(d);
@@ -383,7 +383,7 @@
                     .on("mouseover", mouseOver)
                     .on("mouseleave", mouseLeave)
                     .on("click", mouseClick)
-                    .on('mousemove', function (d) {  
+                    .on('mousemove', function (d) {
                         console.log(this.id);
                         let countryInfo = getCountryInfo(this.id)
                         if (countryInfo == undefined) {
