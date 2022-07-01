@@ -53,4 +53,6 @@ async function getAllData2() {
 }
 getAllData2()
 
-
+function getCountryInfo(c){
+    return topcountries.find(el=>el.country == c)
+}
