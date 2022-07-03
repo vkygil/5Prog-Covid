@@ -70,19 +70,19 @@
                     <br>
                     <h2> COVID-19 Tracker </h2>
                     <ul class="list-group covid-cases-list">
-                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                        <li class="list-group-item d-flex justify-content-between align-items-center total-cases"
                             style="background-color: hsl(0deg 100% 97%)">
                             <span>Total Case</span> <span id="ListTotalCase">1231223</span>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                        <li class="list-group-item d-flex justify-content-between align-items-center active-cases"
                             style="background-color: hsl(34deg 100% 97%)">
                             <span>Active Case</span> <span id="ListActiveCase">12313223</span>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                        <li class="list-group-item d-flex justify-content-between align-items-center recovered-cases"
                             style="background-color: hsl(117deg 100% 96%)">
                             <span>Recovered Case</span> <span id="ListRecoveredCase">12313223</span>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center"
+                        <li class="list-group-item d-flex justify-content-between align-items-center death-cases"
                             style="background-color: hsl(194deg 100% 97%)">
                             <span>Death Case</span> <span id="ListDeathCase">12313223</span>
                         </li>
@@ -93,21 +93,21 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <div>
                                 <img src="https://disease.sh/assets/img/flags/us.png">
-                                A list item
+                                Total Cases
+                            </div>
+                            <span >1231223</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="https://disease.sh/assets/img/flags/us.png">
+                                Total Deaths
                             </div>
                             <span>1231223</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <div>
                                 <img src="https://disease.sh/assets/img/flags/us.png">
-                                A list item
-                            </div>
-                            <span>1231223</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <div>
-                                <img src="https://disease.sh/assets/img/flags/us.png">
-                                A list item
+                                Total Active
                             </div>
                             <span>1231223</span>
                         </li>
@@ -127,8 +127,9 @@
                     </div>
                     <div class="row" id="countryInfoCards">
                         <div class="col-lg-3">
-                            <div class="card">
-                                <div class="card-body">
+                            <div class="card recovered-cases">
+                                <div class="card-body"> 
+                                    <!--PARA IMAGEN COVID-->
                                     <h5 class="card-title">Total cases</h5>
                                     <h2 class="card-text">124132</h2>
                                 </div>
@@ -136,7 +137,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Total Recovered</h5>
-                                    <h2 class="card-text">124132</h2>
+                                    <h2 class="card-text">98765443333</h2>
                                 </div>
                             </div>
                             <div class="card">
@@ -177,11 +178,13 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row card">
                         <div class="card-group">
-                            <div class="card">
-
-                                <div class="card-body">
+                            <div class="card cards-down ">
+                                <div class="col">
+                                    <img src="images/icons/covid-defult.svg" class=" images-down " alt="...">
+                                </div>
+                                <div class="card-body col">
                                     <h5 class="card-text">Total Confirmed</h5>
                                     <p class="card-title" id="ListTotalConfirmed">123123423</p>
                                 </div>
@@ -215,8 +218,6 @@
                                     <p class="card-title">198</p>
                                 </div>
                             </div>
-
-
                         </div>
 
                     </div>
